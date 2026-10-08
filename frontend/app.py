@@ -5,7 +5,7 @@ import plotly.express as px
 import plotly.graph_objects as go
 import os
 
-API_URL = "http://localhost:8000/api"
+API_URL = os.getenv("API_URL", "http://localhost:8000/api")
 
 st.set_page_config(
     page_title="BankRisk360 Dashboard",
